@@ -45,7 +45,7 @@ jobs:
         run: |
           asciidoctor Practical-Gremlin.adoc
           mkdir ../target
-          cp Practical-Gremlin.html target/index.html
+          cp Practical-Gremlin.html ../target/index.html
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
