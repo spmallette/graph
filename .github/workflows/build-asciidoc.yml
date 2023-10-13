@@ -31,14 +31,14 @@ jobs:
           sudo apt-get install calibre
           sudo apt-get install pandoc
       - name: Install Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
       - name: Install Gems
         run: |
           gem install pygments.rb
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Build Documentation
         working-directory: ./book
         run: |
